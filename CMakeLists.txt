@@ -13,7 +13,20 @@ add_executable(main
   src/main.cpp
   src/Shader.hpp
   src/Shader.cpp
+  lib/imgui/imconfig.h
+  lib/imgui/imgui.cpp
+  lib/imgui/imgui.h
+  lib/imgui/imgui_demo.cpp
+  lib/imgui/imgui_draw.cpp
+  lib/imgui/imgui_internal.h
+  lib/imgui/imgui_widgets.cpp
+  lib/imgui/imstb_rectpack.h
+  lib/imgui/imstb_textedit.h
+  lib/imgui/imstb_truetype.h
 )
+
+
+
 set_property(TARGET main PROPERTY CXX_STANDARD 11)
 target_compile_options(main PRIVATE -Wall)
 

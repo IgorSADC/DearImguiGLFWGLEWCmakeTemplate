@@ -47,8 +47,8 @@ VertexType getHeightMap(const glm::vec2 position) {
 
 MyApplication::MyApplication()
     : Application(),
-      vertexShader(SHADER_DIR "/shader.vert", GL_VERTEX_SHADER),
-      fragmentShader(SHADER_DIR "/shader.frag", GL_FRAGMENT_SHADER),
+      vertexShader(SHADER_DIR "/shader.vs", GL_VERTEX_SHADER),
+      fragmentShader(SHADER_DIR "/shader.fs", GL_FRAGMENT_SHADER),
       shaderProgram({vertexShader, fragmentShader}) {
   glCheckError(__FILE__, __LINE__);
 
